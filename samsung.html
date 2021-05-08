@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DESIGN SAMSUNG</title>
+
+    <link rel="icon" type="image/x-icon" href="https://design.samsung.com/kr/favicon.ico">
+
+    <link rel="stylesheet" href="css/reset_samsung.css">
+    
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reset_samsung.css">
+</head>
+<body onscroll="navChange()" onscroll="moveTop()">
+    <header>
+        <nav class="gnb">
+            <div class="gnb_left">
+                <a href="index.html" >
+                <img src="img/logo.png" class="gnb_logo">
+                </a>
+            </div>
+            <div class="gnb_center">
+            <figure >
+                <img src="img/slogan.png" class="gnb_slogan">
+            </figure>
+            <div class="gnb_menu">
+                <a href="" class="gnb_menu_item">WE DESIGN</a>
+                <a href="" class="gnb_menu_item">WE DISCOVER</a>
+                <a href="" class="gnb_menu_item">ABOUT US</a>
+                <a href="" class="gnb_menu_item">NEWS</a>
+                </div>
+            </div>
+            <div class="gnb_right">
+                <div class="gnb_right_link">
+                    <a onclick="searchShow();">
+                        <img src="img/search_black.svg">
+                    </a>
+                    <a href="index.html"><img src="img/globe_black.svg"></a>
+                </div>
+                <div class="gnb_search">        
+                    <img class="gnb_search_close" onclick="searchHide()" src="img/close_2px.svg">
+                    <br>
+                    <input id="project_search" 
+                    onchange="searchProject()"><button class="project_search_btn" onclick="searchProject()">SEARCH</button>
+                </div>
+            </div>   
+        </nav>      
+    </header>
+
+    <main>
+        <!-- Hero section -->
+        <section id="hero">
+            <div class="hero_wrap">
+                <figure>
+                    <img src="img/hero.jpg" class="hero_img"> 
+                </figure> 
+                <ul class="hero_text_wrap">
+                    <li>
+                    <h2 class="hero_title">Artificial Landscapes</h2>
+                    <h3 class="hero_subtitle">MICRO LED 스크린 아이덴티티 디자인스토리</h3>
+                </li>
+                <li>
+                <p class="hero_date">Apr 15. 2021</p>
+                </li>
+                
+                </ul>
+            </div>
+        </section>
+
+        <!-- Project list -->
+        <section id="project">
+        <div class="project_wrap">
+            <div class="no_result">
+                Your search '<span id="searchKeyword"></span>' did not match any contents.<br>Make sure all words are spelled correctly or try different keywords.
+            </div>
+            <ul class="project_list">
+                <li class="project_item">
+                    <a class="project_img" href="https://design.samsung.com/kr/contents/micro-led-screen-identity/">
+                        <img src="img/list_1.jpg">
+                    </a>
+                    <h3 class="project_title">2021 iF 디자인어워드</h3>
+                    <p class="project_subtitle">News</p>
+                    <p class="project_date">Apr 14, 2021</p>
+                </li>
+                <li class="project_item">
+                    <a class="project_img" href="#">
+                        <img src="img/list_2.jpg">
+                    </a>
+                    <h3 class="project_title">Next Station of Clean</h3>
+                    <p class="project_subtitle">삼성 BESPOKE 제트 디자인스토리</p>
+                    <p class="project_date">Mar 25, 2021</p>
+                </li>
+                <li class="project_item">
+                    <a class="project_img" href="#">
+                        <img src="img/list_3.jpg">
+                    </a>
+                    <h3 class="project_title">Complete Immersion</h3>
+                    <p class="project_subtitle">비움으로 완성한 삼성 Neo QLED 8K</p>
+                    <p class="project_date">Mar 04, 2021</p>
+                </li>
+                <li class="project_item">
+                    <a class="project_img" href="#">
+                        <img src="img/list_4.jpg">
+                    </a>
+                    <h3 class="project_title">Form Follows Sound</h3>
+                    <p class="project_subtitle">삼성 갤럭시 버즈 프로 디자인스토리</p>
+                    <p class="project_date">Apr 14, 2021</p>
+                </li>
+                <li class="project_item">
+                    <a class="project_img" href="#">
+                        <img src="img/list_5.jpg">
+                    </a>
+                    <h3 class="project_title">Samsung in the Sound</h3>
+                    <p class="project_subtitle">삼성 브랜드 사운드 디자인스토리</p>
+                    <p class="project_date">Mar 25, 2021</p>
+                </li>
+                <li class="project_item">
+                    <a class="project_img" href="#">
+                        <img src="img/list_6.png">
+                    </a>
+                    <h3 class="project_title">삼성 디자인 시스템 소개</h3>
+                    <p class="project_subtitle">News</p>
+                    <p class="project_date">Mar 04, 2021</p>
+                </li>
+
+                <li class="project_item">
+                    <a class="project_img" href="#">
+                        <img src="img/list_7.jpg">
+                    </a>
+                    <h3 class="project_title">Letters from Samsung Designers</h3>
+                    <p class="project_subtitle">돌아보는 2020, 희망하는 2021</p>
+                    <p class="project_date">Apr 14, 2021</p>
+                    </li>
+                    <li class="project_item">
+                    <a class="project_img" href="#">
+                        <img src="img/list_8.jpg">
+                    </a>
+                    <h3 class="project_title">Design Awards</h3>
+                    <p class="project_subtitle">Awarded Samsung Designn</p>
+                    <p class="project_date">Mar 25, 2021</p>
+                </li>
+                <li class="project_item">
+                    <a class="project_img" href="#">
+                        <img src="img/list_9.jpg">
+                    </a>
+                    <h3 class="project_title">Samsung Design Membership</h3>
+                    <p class="project_subtitle">삼성디자인멤버십을 소개합니다</p>
+                    <p class="project_date">Mar 04, 2021</p>
+
+                </li>
+                <li class="project_item">
+                    <a class="project_img" href="#">
+                        <img src="img/list_10.jpg">
+                    </a>
+                    <h3 class="project_title">Truly Designed for Living</h3>
+                    <p class="project_subtitle">삼성 더 프리미어 디자인스토리</p>
+                    <p class="project_date">Mar 04, 2021</p>
+                </li>
+
+                <li class="project_item">
+                    <a class="project_img" href="#">
+                        <img src="img/list_11.jpg">
+                    </a>
+                    <h3 class="project_title">Six Sides of the Cube</h3>
+                    <p class="project_subtitle">삼성 BESPOKE 큐브 냉장고 디자인스토리</p>
+                    <p class="project_date">Apr 14, 2021</p>
+                    </li>
+                    <li class="project_item">
+                    <a class="project_img" href="#">
+                        <img src="img/list_12.jpg">
+                    </a>
+                    <h3 class="project_title">Here, Samsung Designers</h3>
+                    <p class="project_subtitle">삼성전자에서 디자이너로 일하는 것</p>
+                    <p class="project_date">Mar 25, 2021</p>
+                </li>
+                </ul>
+            </div>
+        </section>
+        
+        
+        
+    </main>
+    <footer>
+        <div class="move_top">
+            <a href="#">
+                <img src="img/arrow_top.svg">
+            </a>
+        </div>
+        <div class="footer_wrap">
+            <a href=""><img src="img/logo_samsung_foot.png" class="footer_logo"></a>
+            <span class="footer_copy">© 2014-2021 SAMSUNG All Rights Reserved.</span><a href="" class="footer_email">이메일 문의</a>
+            <a href="" class="footer_info">개인정보처리방침</a>
+        </div>
+    </footer>
+    <script src="js/nav.js"></script>
+
+    </script>
+</body>
+</html>

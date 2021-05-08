@@ -1,0 +1,28 @@
+/* 웹 폰트 링크 */
+        
+@font-face { 
+    font-family: Galaxie-Book; /* Huge Serif 폰트 */
+    src: url(../font/GalaxieCopernicus-Book.woff) }
+
+@font-face {
+    font-family: HugeGothic-Bold; /* Huge San-serif 폰트 */
+        src: url(../font/HugeGothic-Bold.woff) }
+
+
+
+
+
+@keyframes logo_animation_bg {
+    0%{background-position:0% 0%}
+    100%{background-position:100% 100%}
+}
+
+@keyframes logo_animation_h {
+0% {color:white;}
+90% {color:white;}
+100% {color:#ea178c;}
+}
+
+
+
+html { scroll-behavior: smooth; }
